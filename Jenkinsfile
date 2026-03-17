@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/IThanhphan/test-jenkins.git'
-            }
-        }
-
         stage('Install') {
             steps {
                 sh 'npm install'
